@@ -33,7 +33,7 @@ Analog Bandgap IP Design using Sky130 PDKs
   - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-
+   This Git hub repository is cloud based workshop contains simulation data for Analog Bandgap IP Design using Sky130nm.
 ## Design Specifications
 
 ## Tools Used
@@ -41,6 +41,11 @@ Analog Bandgap IP Design using Sky130 PDKs
 ## Bandgap Design Theory
 
 ### General Overview
+
+![IC soc screenshot](Images/SOC.png)  
+The IC Shown above and many other ICs System require a reference voltage source which is provided by PVT independent biasing circuit. As shown above this IC system can have Analog, Digital subsystems, ADC, DAC and so on; these subsystems get their supply voltage from LDO (Linear Voltage Regulator) and input to these LDO's is same reference voltage source as mentioned above.
+
+This PVT independent biasing ciruit has typical temperature co-efficient of 10-50 ppm/degreeC(~10-50 uV/degreeC for VRef=1V) and typical power-supply rejection 40-60 dB (10-1 mV/V)
 
 ### CTAT Voltage Generation Circuit
 
